@@ -1,6 +1,6 @@
 # Projeto Site Awax
 
-![](/html/site1/assets/images/awax.png)
+![](site1/assets/images/awax.png)
 
 # Descrição
 
