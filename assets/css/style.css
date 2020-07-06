@@ -16,6 +16,8 @@ header {
     color:#FFF;
 }
 
+/* Cabeçalho */
+
 .header {
 
     max-width: 1140px;
@@ -35,8 +37,22 @@ header {
     width: 80px;
     height: 80px;
     background-color: #b28756;
+    color: #FFF;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.logoimg h4 {
+
+    font-size: 18px;
+    text-transform: uppercase;
+   
+}
+
+
+/* menu */
 
 .menu {
 
@@ -78,13 +94,14 @@ header {
     color: #CCC;
 }
 
+/* Banner principal */
+
 .banner {
 
-    background-color:#333;
     height: calc(100vh - 100px);  /* 100vh é o total da tela do monitor */
     background-image: url("../../media/bg.jpg");
     background-size: cover; /* cobre a div toda com a imagem */
-    background-position: center; /* posição da imagem */
+    background-position: top; /* posição da imagem */
     overflow: hidden;
 }
 
@@ -101,4 +118,74 @@ header {
     height: 100%;
     display: inline-block;
     background-color:rgba(0, 0, 0, 0.8);
+}
+
+.banner .slide-area {
+
+    display:flex;
+    height: 100%;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    flex-direction: column;
+}
+
+.banner h1 {
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.banner h1 span {
+
+    color:#b28756;
+
+}
+
+.banner h2 {
+
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.banner a {
+
+    display:block;
+    background-color: #b28756;
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font: 13px;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius:20px;
+}
+
+.banner .sliders-pointers {
+
+    width:100vw;
+    height: 20px;
+    position:absolute;
+    margin-top: -50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer {
+
+    height: 13px;
+    width: 13px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor:pointer;
+}
+
+.banner .pointer.active {
+
+    background-color:#B28756;
 }
