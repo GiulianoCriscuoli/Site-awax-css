@@ -659,17 +659,12 @@ header {
 
 }
 
-.section-happy-clients-body {
-
-    width: 100%;
-   
-}
-
 .section-happy-clients--area {
 
+    width: 100vw;
     margin: auto;
     display: flex;
-    width: 1140px;
+    max-width: 1140px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -783,7 +778,7 @@ header {
 .section-price {
 
     display: flex;
-    width: 100%;
+    width: 100vw;
     max-width: 1140px;
     flex-wrap: wrap;
     margin: auto;
@@ -852,11 +847,18 @@ header {
     
 }
 
+.price-button:hover {
+
+    background-color: #B28756;
+    transition: all 0.3s linear;
+}
+
 /* Sessão premium */
 
 .section-premium--area {
 
-    width: 100%;
+    width: 100vw;
+    
     background-color: #FFF;
     padding-top: 50px;
     border-top: 1px solid #DDD ;
@@ -864,8 +866,11 @@ header {
 
 .section-premium {
 
-    width: 100%;
+    
     display: flex;
+    width: 100vw;
+    max-width: 1140px;
+    flex-wrap:wrap;
     justify-content: space-evenly;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -958,6 +963,9 @@ header {
 .section-facts {
 
     display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 1140px;
 
 }
 
@@ -984,10 +992,7 @@ header {
     position:relative;
     bottom: 60px;
 
-
 }
-
-
 
 .section-fact h4 {
 
@@ -1009,6 +1014,8 @@ header {
 
 }
 
+/* Sessão formulário */
+
 .section-contact {
 
     width: 1140px;
@@ -1019,6 +1026,8 @@ header {
 .section-contact .section-form {
 
     margin: auto;
+    padding:10px;
+    min-height:300px ;
 
 }
 
@@ -1033,7 +1042,7 @@ header {
     text-transform: uppercase;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     padding: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-left: 0px;
     outline: 0;
     font-size: 18px;
@@ -1046,6 +1055,7 @@ header {
 
     display: block;
     min-width: 1025px;
+    margin-top: 20px;
 
 }
 
@@ -1064,4 +1074,159 @@ header {
     outline: 0;
     font-size: 18px;
     background-color:  transparent;
+
+}
+
+.section-contact .section-form input[type="submit"] {
+
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #B28756;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    margin: auto;
+    cursor: pointer;
+    
+}
+
+.section-contact .section-form input[type="submit"]:hover {
+
+    background-color: #000;
+    transition: all 0.5s linear;
+}
+
+.section-contact .section-form .submit {
+
+    display:flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-map {
+
+    background-image: url('../images/mapa.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-map--area {
+
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+    
+}
+
+.section-map--info {
+
+    width: 50%;
+    padding: 30px;
+    background-color: #FFF;
+    color: #000;
+
+}
+
+.section-map--info-item {
+
+    display: flex;
+    align-items: center;
+    color: #999;
+    margin-bottom: 10px;
+
+}
+
+.section-map--info-item-img{
+
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    padding: 5px;
+    background-color: #999;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.section-map--info-item-img img {
+
+    width: 20px;
+    height: auto;
+}
+
+
+footer {
+    background-color: #000;
+    padding: 20px;
+}
+.footer--area {
+    max-width: 1140px;
+    margin: auto;
+    color: #FFF;
+    display: flex;
+}
+.footer--item {
+    flex: 1;
+}
+.footer--item.area2 {
+    color: #999;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 0 10px 10px 10px;
+}
+.footer-social {
+    display: flex;
+}
+.footer-social img {
+    height: 10px;
+}
+.footer-social a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+.footer--item.area2 {
+    color: #999;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 0 10px 10px 10px;
+}
+.footer--item.area3 form {
+    background-color: #333;
+    text-align: center;
+    padding: 30px;
+}
+.footer--item.area3 input {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #CCC;
+    outline: 0;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    background-color: #B28756;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
 }
