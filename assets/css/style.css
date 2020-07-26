@@ -852,6 +852,8 @@ header {
     
 }
 
+/* Sessão premium */
+
 .section-premium--area {
 
     width: 100%;
@@ -971,26 +973,29 @@ header {
 .section-fact--number{
   
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 300;
     color:#B28756;
-    display: flex;
-    flex-direction: column;
-   
+
 
 }
 
-.section-fact--row {
+.section-fact--number h2 {
+    
+    position:relative;
+    bottom: 60px;
 
-    font-weight: bold;
-    color:#B28756;
-    font-size: 50px;
+
 }
+
+
 
 .section-fact h4 {
 
     margin-top:20px;
     text-transform: uppercase;
     font-size:18px;
+    position: relative;
+    bottom: 100px;
 
 }
 
@@ -999,6 +1004,40 @@ header {
     margin-top: 10px;
     font-size:13px;
     color: #999;
+    position: relative;
+    bottom: 100px;
 
 }
 
+.section-contact {
+
+    width: 1140px;
+    display:flex;
+   
+
+}
+
+.section-contact .section-form {
+
+    margin: auto;
+
+}
+
+.section-contact .section-form input[type="text"] {
+
+    margin-right: 20px;
+    flex: 1;
+    width: 500px;
+    border: 0;
+    border-bottom: 2px solid #CCC;
+    color: #CCC;
+    text-transform: uppercase;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    outline: 0;
+    font-size: 18px;
+    
+
+}
