@@ -11,7 +11,7 @@ Este repositório terá constantes mudanças.
 
 ## Responsividade
 
- ![](assets/images/awaxTablet.gif)
+ ![](assets/images/awaxTablet.gif)  ![](assets/images/awaxMobile.gif)
 
 
 
